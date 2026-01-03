@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "article article article";
+  grid-template-rows: auto;
+  flex-grow: 1;
+}
+
+article {
+  grid-area: article;
+  background-color: #000000c5;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.cards-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.img-fundo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.icones{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.2rem;
+  animation: pulse 1.2s infinite;
+  z-index: 10;
+}
+
+.icones2 {
+  position: absolute;
+  bottom: 6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.2rem;
+  animation: pulse 1.2s infinite;
+  z-index: 10;
+}
+
+
+.icones img,
+.icones2 img {
+  width: 20rem;
+  height: auto;
+}
+
+.iconeinsta {
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.2rem;
+  z-index: 10;
+}
+
+.iconeinsta img {
+  width: 3rem;
+  height: auto;
+}
+@keyframes pulse {
+  0%, 100% {
+    transform: translateX(-50%) scale(0.6);
+  }
+  50% {
+    transform: translateX(-50%) scale(0.7);
+  }
+}
+
+/* Esconde a página em telas maiores que 768px */
+@media screen and (min-width: 768px) {
+  body {
+    display: none;
+  }
+}
