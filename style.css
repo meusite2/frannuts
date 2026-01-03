@@ -102,7 +102,7 @@ article {
   height: auto;
 }
 
-.iconeinsta {
+.iconeplataformas {
   position: absolute;
   bottom: 0rem;
   left: 50%;
@@ -115,7 +115,7 @@ article {
   z-index: 10;
 }
 
-.iconeinsta img {
+.iconeplataformas img {
   width: 3rem;
   height: auto;
 }
