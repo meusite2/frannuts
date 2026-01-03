@@ -65,7 +65,7 @@ article {
 
 .icones{
   position: absolute;
-  bottom: 0;
+  bottom: 0.7rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -75,6 +75,10 @@ article {
   gap: 2.2rem;
   animation: pulse 1.2s infinite;
   z-index: 10;
+}
+.icones img{
+  width: 25rem;
+  height: auto;
 }
 
 .icones2 {
@@ -92,9 +96,9 @@ article {
 }
 
 
-.icones img,
+
 .icones2 img {
-  width: 20rem;
+  width: 22rem;
   height: auto;
 }
 
