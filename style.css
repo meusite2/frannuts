@@ -58,8 +58,8 @@ article {
 }
 
 .img-fundo {
-  width: 100%;
-  height: auto;
+  width: 100.1%;
+  margin-top: -1px;
   display: block;
 }
 
